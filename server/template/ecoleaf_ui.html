@@ -1,0 +1,84 @@
+<html>
+  <head>
+      <title>EcoLeaf</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="ecoleaf_ui.css">
+      <script src="ecoleaf_ui.js"></script>
+  </head>
+  <body>
+    <div style="background-image: url('background.jpg');">
+      <h1>EcoLeaf</h1>
+      <h3>Step One: Tailor Gardening to Fit You</h3>
+      <div><input type="radio" id="mode1" name="modes" value="biometric">Biometric Mode</div>
+      <div id="metric">
+        <br>
+        <label>Complexion</label>
+        <div id="complexion">
+        <label for="value">Choose a value:</label>
+          <select name="value" id="value">
+            <option value="-">-</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+            <option value="250">250</option>
+          </select>
+        </div>
+        <br>
+        <label>Nutrition</label>
+        <div id="nutrition">
+          <label>Enter your diet:</label>
+          <br>
+          <textarea id="diet"></textarea>
+        </div>
+        <br>
+        <label>Mobility</label>
+        <br>
+        <label for="mobility">Choose your normal level of activity:</label>
+        <br>
+        <div id="activity">
+          <button class="button" id="sitting">Sitting</button>
+          <button class="button" id="walking">Walking</button>
+          <button class="button" id="running">Running</button>
+          <button class="button" id="biking">Biking</button>
+          <button class="button" id="sprinting">Sprinting</button>
+        </div>
+        <br>
+        <label>Sleep Cycle</label>
+        <div id="sleepcycle">
+          <label>Enter sleeping hour:</label>
+          <textarea id="sleep"></textarea>
+          <br>
+          <label>Enter waking hour:</label>
+          <textarea id="wake"></textarea>
+        </div>
+        <br>
+        <label>Heart Rate</label>
+        <div id="heartrate">
+          <input type="range" min="1" max="200" value="70">
+        </div>
+        <br>
+        <button id="button">Send!</button>
+      </div>
+      <br><br>
+      <div><input type="radio" id="mode2" name="modes" value="heatindex">Heat Index Mode</div>
+      <div id="index">
+        <p>Incorporating Arduino</p>
+        <br>
+        <button id="button">Click here!</button>
+      </div>
+      <br><br><br>
+      <h3>Step Two: Build your EcoLeaf Garden</h3>
+      <div class="garden">
+        <div id="ecoleaf"></div>
+      </div>
+      <img src="my_plot.png">
+      <!-- Designate Areas (AR), Select Options, Sustainable Products -->
+      <br><br>
+      <div class="heatindex">
+        <div class="key">Heat Index: </div>
+        <div id="idx"></div>
+      </div>
+    </div>
+  </body>
+</html>

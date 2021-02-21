@@ -1,0 +1,14 @@
+runtime: python27
+api_version: 1
+threadsafe: false
+
+handlers:
+- url: /static
+  static_dir: ecoleaf/static
+- url: /.*
+  script: main.application
+
+env_variables:
+  DATABASE: ecoleaf
+  USER: user
+  HOST: localhost

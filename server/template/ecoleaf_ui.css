@@ -1,0 +1,24 @@
+body {
+  font-weight: 550;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+span.key {
+  display: inline-block;
+  text-align: right;
+}
+
+label {
+  font-size: 15px;
+}
+
+#metric{
+  display: none;
+}
+
+#index {
+  display: none;
+}
